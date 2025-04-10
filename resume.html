@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>山本息吹樹 プロフィール</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans", Meiryo, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1000px;
+      }
+      .profile-header {
+        background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+        color: white;
+      }
+      .section-title {
+        border-bottom: 2px solid #3182ce;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        color: #2c5282;
+        font-weight: bold;
+      }
+      .skill-tag {
+        background-color: #ebf8ff;
+        color: #2b6cb0;
+        border: 1px solid #bee3f8;
+      }
+      .project-card {
+        border-left: 4px solid #3182ce;
+      }
+      .timeline-item {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 16px;
+      }
+      .timeline-item:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #3182ce;
+      }
+      .timeline-item:after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 15px;
+        width: 2px;
+        height: calc(100% + 10px);
+        background-color: #cbd5e0;
+      }
+      .timeline-item:last-child:after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8 bg-white shadow-lg">
+      <!-- プロフィールヘッダー -->
+      <div class="profile-header rounded-lg p-6 mb-8">
+        <h1 class="text-4xl font-bold mb-2">山本 息吹樹</h1>
+        <p class="text-xl mb-4">株式会社 Wilico 代表取締役</p>
+        <div class="flex flex-wrap items-center text-sm">
+          <div class="mr-6 mb-2">
+            <i class="far fa-calendar mr-2"></i>1997年10月26日生
+          </div>
+          <div class="mr-6 mb-2">
+            <i class="fas fa-envelope mr-2"></i>ibuki.yamamoto@wilico.co.jp
+          </div>
+        </div>
+      </div>
+
+      <!-- 学歴・経歴 -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">学歴・経歴</h2>
+        <div class="pl-4">
+          <div class="timeline-item">
+            <p class="font-bold">2016年3月</p>
+            <p>大阪星光学院高等学校 卒業</p>
+          </div>
+          <div class="timeline-item">
+            <p class="font-bold">2019年6月</p>
+            <p>株式会社Wilico 設立（大学在学中に起業）</p>
+          </div>
+          <div class="timeline-item">
+            <p class="font-bold">2020年3月</p>
+            <p>慶應義塾大学商学部 卒業</p>
+          </div>
+          <div class="timeline-item">
+            <p class="font-bold">2019年〜現在</p>
+            <p>株式会社Wilico 代表取締役</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自己紹介 -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">プロフィール</h2>
+        <p class="mb-4">
+          株式会社 Wilico の代表取締役兼エンジニアです。累計約 2
+          億円の資金調達を達成した自社プロダクト『プライシー』を開発・運営しています。エンジニアリングだけでなく、マーケティング戦略、グロース設計、プロダクトマネジメントまでを一貫して手がけています。
+        </p>
+        <p>
+          「実装」だけでなく「戦略」と「成果」にコミットできるチームとして、クライアントのプロダクト開発や事業成長を総合的に支援しています。
+        </p>
+      </div>
+
+      <!-- 主な実績 -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">主な実績</h2>
+
+        <div class="mb-6 project-card pl-4 py-2">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            📱 プライシー（Pricey）
+          </h3>
+          <ul class="list-disc pl-5">
+            <li>累計調達約 2 億円、月間数万ユーザー規模に成長</li>
+            <li>iOS / Android アプリ開発 (Kotlin, Swift)</li>
+            <li>大規模データスクレイピング、価格分析基盤の構築</li>
+            <li>
+              ユーザー体験・UI/UX
+              改善・オンボーディング設計・SEO・インフルエンサー施策など、成長に向けた包括的施策の設計・実行
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6 project-card pl-4 py-2">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            🌐 大規模 Web メディア設計・運営
+          </h3>
+          <ul class="list-disc pl-5">
+            <li>Vue.js・Nuxt.js を利用した大規模オウンドメディア構築</li>
+            <li>
+              数万ページ規模の動的コンテンツ生成と SEO 最適化（SSR/SSG
+              の適切な使い分け、コンテンツキャッシュ戦略の設計・運用）
+            </li>
+            <li>
+              コンテンツ管理システム（CMS）の柔軟な設計とスケーラブルなインフラ構築
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6 project-card pl-4 py-2">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            🤖 AI 自動生成システム
+          </h3>
+          <ul class="list-disc pl-5">
+            <li>
+              OpenAI API
+              を利用した価格トレンド分析コンテンツ自動生成ツールの開発
+            </li>
+            <li>
+              ユーザー行動データをもとにしたレコメンドコンテンツ生成・時期別訴求などの自動化実装
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- スキル -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">得意なスキル</h2>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">モバイルアプリ開発</h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Swift</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Kotlin</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >ネイティブ開発</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >クリーンアーキテクチャ</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">MVVM</span>
+          </div>
+          <p class="text-gray-700">
+            クリーンアーキテクチャ、MVVM など設計思想を重視したモジュール構築
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">モダンフロントエンド</h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Vue.js</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Nuxt.js</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">SPA</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">SSR</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">SSG</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Jamstack</span
+            >
+          </div>
+          <p class="text-gray-700">
+            大規模 SPA/SSR/SSG の開発、Jamstack
+            アプローチによる高速かつスケーラブルなフロントエンド設計
+          </p>
+          <p class="text-gray-700">
+            Vercel や Firebase Hosting を利用した CDN 戦略の実践
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">バックエンド設計・開発</h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Node.js</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Python</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >RESTful API</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >GraphQL</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Firebase</span
+            >
+          </div>
+          <p class="text-gray-700">
+            API 開発（RESTful・GraphQL）、Firebase (Firestore, Cloud Functions,
+            Authentication) を活用したサーバーレス基盤の構築
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">インフラ・クラウド基盤</h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >AWS ECS</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Lambda</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >API Gateway</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Terraform</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >AWS CDK</span
+            >
+          </div>
+          <p class="text-gray-700">
+            AWS ECS・Lambda・API Gateway
+            を組み合わせたコンテナ・サーバーレス環境の構築
+          </p>
+          <p class="text-gray-700">
+            Infrastructure as Code（Terraform・AWS
+            CDK）を用いた自動化・再現性の担保
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">
+            データエンジニアリング・スクレイピング
+          </h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">Python</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">ETL</span>
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Bright Data</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm">ECS</span>
+          </div>
+          <p class="text-gray-700">
+            Python を用いた大規模スクレイピングおよびデータ ETL パイプライン設計
+          </p>
+          <p class="text-gray-700">
+            Bright Data と ECS を活用した大規模分散クローリング基盤の運用経験
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-2">AI・自動化ソリューション</h3>
+          <div class="flex flex-wrap gap-2 mb-2">
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >OpenAI API</span
+            >
+            <span class="skill-tag px-3 py-1 rounded-full text-sm"
+              >Google Apps Script</span
+            >
+          </div>
+          <p class="text-gray-700">
+            OpenAI API を活用したコンテンツ自動生成、分析ツールの構築
+          </p>
+          <p class="text-gray-700">
+            Google Apps
+            Script（GAS）を利用した社内業務の効率化・ワークフロー自動化
+          </p>
+        </div>
+      </div>
+
+      <!-- プロジェクト詳細 -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">プロジェクト詳細</h2>
+
+        <div class="mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            プライシー（Pricey）
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+            <div>
+              <p class="text-sm text-gray-600 mb-1">期間</p>
+              <p class="font-semibold">2019年 - 現在</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-600 mb-1">チーム規模</p>
+              <p class="font-semibold">4-5名</p>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">概要</p>
+            <p>
+              累計約 2
+              億円の資金調達を達成した価格比較アプリの開発・運営。月間数万ユーザー規模に成長。
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">役割</p>
+            <p>
+              プロダクト設計、開発、マーケティング戦略立案、グロース施策実行
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">使用技術</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Kotlin</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Swift</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Python</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs">AWS</span>
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Firebase</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            大規模 Web メディア
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+            <div>
+              <p class="text-sm text-gray-600 mb-1">期間</p>
+              <p class="font-semibold">2019年 - 現在</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-600 mb-1">チーム規模</p>
+              <p class="font-semibold">10名</p>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">概要</p>
+            <p>
+              数万ページ規模の動的コンテンツ生成と SEO
+              最適化を行う大規模オウンドメディアの構築。
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">役割</p>
+            <p>アーキテクチャ設計、開発リード、インフラ構築、SEO 戦略立案</p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">使用技術</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Vue.js</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Nuxt.js</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >SSR/SSG</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Vercel</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Firebase</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8 bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">
+            AI 自動生成システム
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+            <div>
+              <p class="text-sm text-gray-600 mb-1">期間</p>
+              <p class="font-semibold">2019年 - 現在</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-600 mb-1">チーム規模</p>
+              <p class="font-semibold">4-5名</p>
+            </div>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">概要</p>
+            <p>
+              OpenAI API
+              を利用した価格トレンド分析コンテンツ自動生成ツールの開発。ユーザー行動データに基づいたレコメンド生成システム。
+            </p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">役割</p>
+            <p>AI 連携システム設計、アルゴリズム開発、データ分析基盤構築</p>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-gray-600 mb-1">使用技術</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >OpenAI API</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Python</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >Node.js</span
+              >
+              <span class="skill-tag px-2 py-1 rounded-full text-xs"
+                >AWS Lambda</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ワークスタイル -->
+      <div class="mb-10">
+        <h2 class="section-title text-2xl">ワークスタイル</h2>
+
+        <ul class="list-disc pl-5 mb-4">
+          <li>フルリモートでの対応（MTG や進行管理含め柔軟に対応可能）</li>
+          <li>法人業務委託契約（チームベース：月間 1.5〜2 人月 稼働可能）</li>
+          <li>
+            <strong>人月単価目安：150 万円〜200 万円（税抜・応相談）</strong>
+          </li>
+          <li>
+            単なる開発受託ではなく、「戦略〜実行〜改善」までコミットする伴走型支援を重視
+          </li>
+          <li>
+            成果物ベースでの契約や、スタートアップ支援的な柔軟なアプローチも可能です
+          </li>
+        </ul>
+
+        <div class="mt-8">
+          <p class="text-lg font-bold mb-2">稼働開始可能時期</p>
+          <p>4月中でもスタート可能</p>
+        </div>
+      </div>
+
+      <!-- 連絡先 -->
+      <div class="mt-10 bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">連絡先</h2>
+        <div class="flex items-center mb-2">
+          <i class="fas fa-envelope text-blue-600 mr-3"></i>
+          <span>ibuki.yamamoto@wilico.co.jp</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
